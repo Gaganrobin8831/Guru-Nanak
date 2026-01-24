@@ -1,0 +1,17 @@
+import {Routes,Route} from 'react-router-dom'
+import Hero from './pages/Hero'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
+const App = () => {
+  return (
+    <div className="bg-[url('/school.jpg')] bg-cover bg-center min-h-screen pt-20">
+    <Nav/>
+    <Routes>
+        <Route path='/' element={<Hero/>}/>
+    </Routes>
+    <Footer/>
+    </div>
+  )
+}
+
+export default App
