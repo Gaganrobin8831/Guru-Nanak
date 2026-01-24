@@ -51,7 +51,7 @@ const Slider = () => {
             disableOnInteraction: false,
           }}
           modules={[EffectFade, Pagination, Autoplay]}
-          className="mySwiper h-full"
+          className="mySwiper h-[80vh]"
         >
           {
             imgArr.map((img, index) => (
