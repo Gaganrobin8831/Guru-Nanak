@@ -3,6 +3,7 @@ import { FaHome, FaInfoCircle, FaCalendar, FaBuilding, FaPhone, FaBars, FaTimes 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -34,9 +35,9 @@ const Nav = () => {
             (Ghee Mandi)
         </div>
         <ul className="hidden md:flex items-center justify-evenly w-[50%] text-lg font-semibold">
-            <li className="hover:border-b cursor-pointer flex items-center gap-2"><FaHome /> Home</li>
+           <Link to="/"><li className="hover:border-b cursor-pointer flex items-center gap-2"><FaHome /> Home</li></Link>
             <li className="hover:border-b cursor-pointer flex items-center gap-2"><FaInfoCircle /> About Us</li>
-            <li className="hover:border-b cursor-pointer flex items-center gap-2"><FaCalendar /> Events</li>
+           <Link to="/events"> <li className="hover:border-b cursor-pointer flex items-center gap-2"><FaCalendar /> Events</li></Link>
             <li className="hover:border-b cursor-pointer flex items-center gap-2"><FaBuilding /> Infrastructure</li>
             <li className="hover:border-b cursor-pointer flex items-center gap-2"><FaPhone /> Contact Us</li>
             

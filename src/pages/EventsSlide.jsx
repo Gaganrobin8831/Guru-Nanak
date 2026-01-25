@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 const EventsSlide = () => {
   const imgArr = [
@@ -74,7 +75,8 @@ const EventsSlide = () => {
 
       </Swiper>
 
-     <div className='text-center my-5'><button className='py-3 px-6 bg-orange-400 rounded-full font-bold text-white'>View More </button>
+     <div className='text-center my-5'>
+      <Link to="/events"><button className='py-3 px-6 bg-orange-400 rounded-full font-bold text-white hover:cursor-pointer'>View More </button></Link>
       </div> 
     </div>
   )
