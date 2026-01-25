@@ -2,7 +2,7 @@ import {Routes,Route} from 'react-router-dom'
 import Hero from './pages/Hero'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/ScrollTop";
 import Events from './pages/Events'
 const App = () => {
   return (
