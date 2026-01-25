@@ -36,33 +36,30 @@ const Slider = () => {
   ]
   return (
     <>
-      <div className='h-[80vh] w-full'>
+      <div className="w-full min-h-[80svh]">
+  <Swiper
+    spaceBetween={30}
+    effect="fade"
+    pagination={{ clickable: true }}
+    autoplay={{
+      delay: 3000,
+      disableOnInteraction: false,
+    }}
+    modules={[EffectFade, Pagination, Autoplay]}
+    className="w-full min-h-[80svh]"
+  >
+    {imgArr.map((img, index) => (
+      <SwiperSlide key={index} className="h-full">
+        <img
+          src={img}
+          className="w-full h-full object-cover"
+          alt="slide"
+        />
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
 
-
-        <Swiper
-          spaceBetween={30}
-          effect={'fade'}
-          navigation={true}
-          pagination={{
-            clickable: true,
-          }}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          modules={[EffectFade, Pagination, Autoplay]}
-          className="mySwiper h-full"
-        >
-          {
-            imgArr.map((img, index) => (
-              <SwiperSlide>
-                <img src={img} className="w-full h-full object-cover" />
-              </SwiperSlide>
-
-            ))
-          }
-        </Swiper>
-      </div>
     </>
   )
 }
