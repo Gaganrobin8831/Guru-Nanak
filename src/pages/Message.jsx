@@ -104,10 +104,12 @@ const Message = () => {
                     <div className="max-w-2xl text-center lg:text-left">
                         <h2 className="text-3xl font-bold text-gray-800 mb-4">(Director of Education in SGPC Message) <br />
                             (Bibi Satwant Kaur)</h2>
-                        <p className="text-gray-700 leading-relaxed mb-4">I am delighted to welcome you to Sri Guru Nanak Girls Sen Sec School, Ghee Mandi, Sri Amritsar Sahib
+                        <p className="text-gray-700 leading-relaxed mb-4">
+
+I am delighted to welcome you to Sri Guru Nanak Girls Sen Sec School, Ghee Mandi, Sri Amritsar Sahib 
 
 
-                            Our Core Aspiration is to provide an Educational Excellence, in that every student makes a positive difference during the time with us. In expecting Excellence we ensure that children enjoy school in a happy, safe and secure atmosphere designed to fulfill their potential. We also strive to provide a caring, supportive and challenging environment to the children, in which they can grow and flourish to the esteemed heights.</p>
+Our Core Aspiration is to provide an Educational Excellence, that every student makes a positive difference during the school hours with us. In expecting Excellence we ensure that children enjoy school in a happy, safe and secure atmosphere designed to fulfill their potential. We also strive to provide a caring, supportive and challenging environment to the children, in which they can grow and flourish to the esteemed heights.</p>
                     </div>
                 </div>
             </div>
