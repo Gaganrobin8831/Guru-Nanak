@@ -36,7 +36,7 @@ const Slider = () => {
   ]
   return (
     <>
-      <div className="w-full min-h-[80svh]">
+      <div className="w-full min-h-[60svh] md:min-h-[80svh]">
   <Swiper
     spaceBetween={30}
     effect="fade"
@@ -46,13 +46,13 @@ const Slider = () => {
       disableOnInteraction: false,
     }}
     modules={[EffectFade, Pagination, Autoplay]}
-    className="w-full min-h-[80svh]"
+    className="w-full h-full"
   >
     {imgArr.map((img, index) => (
       <SwiperSlide key={index} className="h-full">
         <img
           src={img}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover md:object-cover"
           alt="slide"
         />
       </SwiperSlide>
