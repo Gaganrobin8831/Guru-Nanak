@@ -36,7 +36,7 @@ const Slider = () => {
   ]
   return (
     <>
-      <div className="w-full min-h-[60svh] md:min-h-[80svh]">
+      <div className="w-full min-h-[80svh]">
   <Swiper
     spaceBetween={30}
     effect="fade"
