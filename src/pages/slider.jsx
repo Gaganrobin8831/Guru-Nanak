@@ -24,7 +24,9 @@ const Slider = () => {
   ];
 
   return (
-    <div className="w-full h-[50svh] sm:h-[70svh] lg:h-[80svh] overflow-hidden">
+    <div className="w-full h-[50dvh]
+
+ sm:h-[70svh] lg:h-[80svh] overflow-hidden">
       <Swiper
         effect="fade"
         pagination={{ clickable: true }}
