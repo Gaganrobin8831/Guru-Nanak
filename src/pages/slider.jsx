@@ -43,7 +43,7 @@ const Slider = () => {
             <img
               src={img}
               alt="slide"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-[55svh] lg:h-full object-cover object-center"
             />
           </SwiperSlide>
         ))}
