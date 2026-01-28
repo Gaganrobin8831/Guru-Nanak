@@ -24,7 +24,7 @@ const Slider = () => {
   ];
 
   return (
-    <div className="w-full  overflow-hidden">
+    <div className="w-full h-screen overflow-hidden">
       <Swiper
         effect="fade"
         pagination={{ clickable: true }}
@@ -40,7 +40,7 @@ const Slider = () => {
             <img
               src={img}
               alt="slide"
-              className="w-full h-screen object-cover"
+              className="w-full  object-cover"
             />
           </SwiperSlide>
         ))}
