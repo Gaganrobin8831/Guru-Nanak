@@ -36,10 +36,11 @@ const Slider = () => {
         {imgArr.map((img, index) => (
           <SwiperSlide key={index} className="w-full h-full">
             <img
-              src={img}
-              alt="slide"
-              className="w-full h-full object-cover object-center"
-            />
+  src={img}
+  alt="slide"
+  className="w-full h-full object-contain md:object-cover"
+/>
+
           </SwiperSlide>
         ))}
       </Swiper>
