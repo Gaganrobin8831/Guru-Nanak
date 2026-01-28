@@ -49,8 +49,10 @@ const Slider = () => {
               src={img}
               alt="slide"
               className="
-                w-full
-                h-full
+                          w-full
+          h-[65svh]        /* MOBILE height increased */
+          sm:h-[70svh]
+          md:h-[80svh]     /* DESKTOP SAME AS BEFORE */
                 object-cover
                 object-center
               "
