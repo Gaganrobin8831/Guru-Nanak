@@ -1,8 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 
+// Swiper modules
 import { EffectFade, Pagination, Autoplay } from 'swiper/modules';
 
 const Slider = () => {
@@ -24,7 +27,7 @@ const Slider = () => {
   ];
 
   return (
-    <div className="w-full min-h-[50svh] md:min-h-[80svh] overflow-hidden">
+    <div className="w-full overflow-hidden">
       <Swiper
         effect="fade"
         pagination={{ clickable: true }}
@@ -33,14 +36,24 @@ const Slider = () => {
           disableOnInteraction: false,
         }}
         modules={[EffectFade, Pagination, Autoplay]}
-        className="w-full h-[100svh] md:h-[80svh]"
+        className="
+          w-full
+          h-[65svh]        /* MOBILE height increased */
+          sm:h-[70svh]
+          md:h-[80svh]     /* DESKTOP SAME AS BEFORE */
+        "
       >
         {imgArr.map((img, index) => (
           <SwiperSlide key={index} className="w-full h-full">
             <img
               src={img}
               alt="slide"
-              className="w-full h-full object-cover"
+              className="
+                w-full
+                h-full
+                object-cover
+                object-center
+              "
             />
           </SwiperSlide>
         ))}
