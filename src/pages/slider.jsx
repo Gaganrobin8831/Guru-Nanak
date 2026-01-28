@@ -33,7 +33,7 @@ const Slider = () => {
           disableOnInteraction: false,
         }}
         modules={[EffectFade, Pagination, Autoplay]}
-        className="w-full h-[50svh] md:h-[80svh]"
+        className="w-full h-[100svh] md:h-[80svh]"
       >
         {imgArr.map((img, index) => (
           <SwiperSlide key={index} className="w-full h-full">
