@@ -24,11 +24,8 @@ const Slider = () => {
   ];
 
   return (
-    <div className="w-full 
-      h-[55svh] sm:h-[70svh] lg:h-[80svh]">
-      
+    <div className="w-full h-[50svh] sm:h-[70svh] lg:h-[80svh] overflow-hidden">
       <Swiper
-        spaceBetween={30}
         effect="fade"
         pagination={{ clickable: true }}
         autoplay={{
@@ -36,14 +33,14 @@ const Slider = () => {
           disableOnInteraction: false,
         }}
         modules={[EffectFade, Pagination, Autoplay]}
-        className="w-full h-[55svh] lg:h-full"
+        className="w-full h-full"
       >
         {imgArr.map((img, index) => (
-          <SwiperSlide key={index} className="w-full h-[55svh] lg:h-full">
+          <SwiperSlide key={index} className="w-full h-full">
             <img
               src={img}
               alt="slide"
-              className="w-full h-[55svh] lg:h-full object-cover object-center"
+              className="w-full h-full object-cover"
             />
           </SwiperSlide>
         ))}
