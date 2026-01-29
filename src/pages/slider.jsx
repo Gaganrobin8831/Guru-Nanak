@@ -24,24 +24,23 @@ const Slider = () => {
   ];
 
   return (
-    <div className="w-full min-h-[50svh] md:min-h-[80svh] overflow-hidden">
+    <div className="w-full h-[55svh] md:h-[80svh] overflow-hidden bg-black">
       <Swiper
         effect="fade"
+        fadeEffect={{ crossFade: true }}
         pagination={{ clickable: true }}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         modules={[EffectFade, Pagination, Autoplay]}
-        className="w-full h-[50svh] md:h-[80svh]"
+        className="w-full h-full"
       >
         {imgArr.map((img, index) => (
           <SwiperSlide key={index} className="w-full h-full">
             <img
-              src={img}
-              alt="slide"
-              className="w-full h-full object-cover"
-            />
+  src={img}
+  alt="slide"
+  className="w-full h-full object-contain md:object-cover"
+/>
+
           </SwiperSlide>
         ))}
         
