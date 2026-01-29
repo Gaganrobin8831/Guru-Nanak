@@ -1,3 +1,4 @@
+import { obj1 } from "../data/data"
 
 const Events = () => {
      const imgArr = [
@@ -27,9 +28,21 @@ const Events = () => {
         School activities
       </h1>
       <p className='lg:w-[60%] mx-auto p-7 text-center'>School activities play a crucial role in shaping students academic, social, and personal development. These activities go beyond the standard classroom curriculum and provide students with practical learning experiences.</p>
+     
+     <h1 className="text-center text-2xl sm:text-3xl lg:text-[35px] font-extrabold text-orange-400 mb-6">Activities</h1>
       <div className='min-h-[80%] flex flex-wrap justify-center gap-4'>
         {
-           imgArr.map((value,index)=>(
+           obj1.activity.map((value,index)=>(
+              <div key={index} className='w-72 h-72 shadow-lg rounded-lg overflow-hidden'>
+                    <img src={value} alt={`Event ${index + 1}`} className='w-full h-full object-cover hover:scale-105 transition-transform duration-300'/>
+                </div>
+           ))
+        }
+      </div>
+      <h1 className="text-center text-2xl sm:text-3xl lg:text-[45px] font-extrabold text-orange-400 my-8">Games</h1>
+      <div className='min-h-[80%] flex flex-wrap justify-center gap-4'>
+        {
+           obj1.Games.map((value,index)=>(
               <div key={index} className='w-72 h-72 shadow-lg rounded-lg overflow-hidden'>
                     <img src={value} alt={`Event ${index + 1}`} className='w-full h-full object-cover hover:scale-105 transition-transform duration-300'/>
                 </div>

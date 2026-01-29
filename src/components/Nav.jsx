@@ -36,9 +36,9 @@ const Nav = () => {
     <div className="nav fixed top-0 left-0 w-full z-50 bg-blue-900 text-white flex py-3 px-4 lg:px-8 items-center justify-between">
       
       {/* Logo */}
-      <div className="flex font-extrabold text-lg md:text-2xl items-center gap-4">
+      <div className="flex font-extrabold text-lg md:text-xl items-center gap-4">
         <img src="/logo.png" alt="logo" className="w-12 md:w-16 object-contain" />
-        <span className="hidden sm:block">
+        <span className="">
           SRI GURU NANAK GIRLS SENIOR SECONDARY SCHOOL (Ghee Mandi)
         </span>
       </div>
@@ -56,14 +56,14 @@ const Nav = () => {
         className={`
           absolute top-full left-0 w-full bg-blue-900
           flex flex-col items-center text-lg font-semibold
-          transition-all duration-300
-          md:static md:flex md:flex-row md:w-auto md:bg-transparent
+          transition-all duration-300 justify-evenly
+          md:static md:flex md:flex-row md:w-[60%] md:bg-transparent
           md:gap-8 md:opacity-100 md:translate-y-0 md:pointer-events-auto
           ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'}
           md:pointer-events-auto
         `}
       >
-        <Link to="/" onClick={() => setIsOpen(false)}>
+        <Link to={"/"} onClick={() => setIsOpen(false)}>
           <li className="py-2 md:py-0 hover:border-b cursor-pointer flex items-center gap-2">
             <FaHome /> Home
           </li>
@@ -73,7 +73,7 @@ const Nav = () => {
           <FaInfoCircle /> About Us
         </li>
 
-        <Link to="/events" onClick={() => setIsOpen(false)}>
+        <Link to={"/events"} onClick={() => setIsOpen(false)}>
           <li className="py-2 md:py-0 hover:border-b cursor-pointer flex items-center gap-2">
             <FaCalendar /> Events
           </li>
