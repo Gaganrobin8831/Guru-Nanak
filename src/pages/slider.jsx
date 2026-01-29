@@ -44,6 +44,7 @@ const Slider = () => {
             />
           </SwiperSlide>
         ))}
+        
       </Swiper>
     </div>
   );
