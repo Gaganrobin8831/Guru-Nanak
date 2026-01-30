@@ -69,9 +69,11 @@ const Nav = () => {
           </li>
         </Link>
 
+          <Link to={'/AboutUs'} onClick={() => setIsOpen(false)}>
         <li className="py-2 md:py-0 hover:border-b cursor-pointer flex items-center gap-2">
           <FaInfoCircle /> About Us
         </li>
+          </Link>
 
         <Link to={"/events"} onClick={() => setIsOpen(false)}>
           <li className="py-2 md:py-0 hover:border-b cursor-pointer flex items-center gap-2">
@@ -84,9 +86,11 @@ const Nav = () => {
         </li>
           </Link>
 
+          <Link to={'/Contact'} onClick={() => setIsOpen(false)}>
         <li className="py-2 md:py-0 hover:border-b cursor-pointer flex items-center gap-2">
           <FaPhone /> Contact Us
         </li>
+          </Link>
       </ul>
     </div>
   );
